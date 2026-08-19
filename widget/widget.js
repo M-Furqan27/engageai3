@@ -1,6 +1,6 @@
 (()=>{
   const cfg=window.ENGAGEAI_WIDGET_CONFIG||{};
-  const API=cfg.apiBaseUrl||'http://127.0.0.1:8000';
+  const API=cfg.apiBaseUrl||'https://YOUR-ACTUAL-BACKEND-URL.onrender.com';
   const ORG=cfg.organizationId;
   if(!ORG){console.error('EngageAI: organizationId is required');return}
 

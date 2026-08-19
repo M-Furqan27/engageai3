@@ -1,5 +1,5 @@
 const EngageAI = (() => {
-  const API = localStorage.getItem('apiBase') || 'http://127.0.0.1:8000';
+  const API = localStorage.getItem('apiBase') || 'https://YOUR-ACTUAL-BACKEND-URL.onrender.com';
   const SESSION_KEYS = ['access_token', 'token_type', 'user_id', 'organization_id', 'onboarding_completed'];
   const THEME_KEY = 'engageai_theme';
 

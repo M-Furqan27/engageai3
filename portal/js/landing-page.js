@@ -9,8 +9,8 @@ async function loadLandingPage() {
 
   try {
     const [orgResponse, servicesResponse] = await Promise.all([
-      fetch(`http://127.0.0.1:8000/organizations/${organizationId}`),
-      fetch(`http://127.0.0.1:8000/services/${organizationId}`)
+      fetch(`https://YOUR-ACTUAL-BACKEND-URL.onrender.com/organizations/${organizationId}`),
+      fetch(`https://YOUR-ACTUAL-BACKEND-URL.onrender.com/services/${organizationId}`)
     ]);
 
     if (!orgResponse.ok || !servicesResponse.ok) {
@@ -76,7 +76,7 @@ async function loadLandingPage() {
     window.ENGAGEAI_WIDGET_CONFIG = {
         organizationId: organizationId,
         organizationName: organization.organization_name,
-        apiBaseUrl: 'http://127.0.0.1:8000',
+        apiBaseUrl: 'https://YOUR-ACTUAL-BACKEND-URL.onrender.com',
         widgetCssUrl: '../widget/widget.css'
     };
 
