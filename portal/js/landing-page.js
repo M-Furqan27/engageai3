@@ -77,11 +77,11 @@ async function loadLandingPage() {
         organizationId: organizationId,
         organizationName: organization.organization_name,
         apiBaseUrl: 'https://engageai-backend-zhki.onrender.com',
-        widgetCssUrl: '../widget/widget.css'
+        widgetCssUrl: 'https://engageai-backend-zhki.onrender.com/widget/widget.css'
     };
 
     const widgetScript = document.createElement('script');
-    widgetScript.src = '../widget/widget.js';
+    widgetScript.src = 'https://engageai-backend-zhki.onrender.com/widget/widget.js';
     document.body.appendChild(widgetScript);
 
   } catch (error) {
