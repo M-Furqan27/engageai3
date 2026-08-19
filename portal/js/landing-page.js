@@ -9,8 +9,8 @@ async function loadLandingPage() {
 
   try {
     const [orgResponse, servicesResponse] = await Promise.all([
-      fetch(`https://YOUR-ACTUAL-BACKEND-URL.onrender.com/organizations/${organizationId}`),
-      fetch(`https://YOUR-ACTUAL-BACKEND-URL.onrender.com/services/${organizationId}`)
+      fetch(`https://engageai-backend-zhki.onrender.com/organizations/${organizationId}`),
+      fetch(`https://engageai-backend-zhki.onrender.com/services/${organizationId}`)
     ]);
 
     if (!orgResponse.ok || !servicesResponse.ok) {
@@ -76,7 +76,7 @@ async function loadLandingPage() {
     window.ENGAGEAI_WIDGET_CONFIG = {
         organizationId: organizationId,
         organizationName: organization.organization_name,
-        apiBaseUrl: 'https://YOUR-ACTUAL-BACKEND-URL.onrender.com',
+        apiBaseUrl: 'https://engageai-backend-zhki.onrender.com',
         widgetCssUrl: '../widget/widget.css'
     };
 
