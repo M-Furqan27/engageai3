@@ -72,16 +72,14 @@ async function loadLandingPage() {
       `;
     });
 
-    // Widget config
-    window.ENGAGEAI_WIDGET_CONFIG = {
-        organizationId: organizationId,
-        organizationName: organization.organization_name,
-        apiBaseUrl: 'https://engageai-backend-zhki.onrender.com',
-        widgetCssUrl: 'https://engageai-backend-zhki.onrender.com/widget/widget.css'
-    };
-
+    // Load organization-specific EngageAI widget
     const widgetScript = document.createElement('script');
-    widgetScript.src = 'https://engageai-backend-zhki.onrender.com/widget/widget.js';
+
+    widgetScript.src =
+        `https://engageai-backend-zhki.onrender.com/widget/embed.js?organization_id=${encodeURIComponent(organizationId)}`;
+
+    widgetScript.async = true;
+
     document.body.appendChild(widgetScript);
 
   } catch (error) {
