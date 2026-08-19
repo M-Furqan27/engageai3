@@ -418,7 +418,7 @@ function renderLandingPageProfile(organization) {
   }
 
   const pageUrl =
-    `${window.location.origin}/portal/landing-page.html?organization_id=${organizationId}`;
+    `${window.location.origin}/landing-page.html?organization_id=${organizationId}`;
 
   host.innerHTML = `
     <div class="d-flex align-items-center gap-2 flex-wrap">
