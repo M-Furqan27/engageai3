@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>(function(){try{document.documentElement.setAttribute('data-theme',localStorage.getItem('engageai_theme')==='dark'?'dark':'light')}catch(e){document.documentElement.setAttribute('data-theme','light')}})();</script>
+  <title>Create Account · EngageAI</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="auth-page">
+    <section class="auth-visual">
+      <div class="auth-brand">
+        <span class="brand-mark"><i class="bi bi-stars"></i></span>
+        <div><strong>EngageAI</strong><div class="small opacity-75">Intelligent customer engagement</div></div>
+      </div>
+      <div class="auth-copy">
+        <div class="page-eyebrow text-white opacity-75">Get Started</div>
+        <h1>Build a customer-ready AI workspace for your organization.</h1>
+        <p>Create your owner account, add your business information, then provide services, policies and knowledge by document upload or manual entry.</p>
+        <div class="auth-points">
+          <div class="auth-point"><i class="bi bi-file-earmark-arrow-up"></i> Upload business documents and let AI structure the information.</div>
+          <div class="auth-point"><i class="bi bi-pencil-square"></i> Prefer manual control? Enter and manage data yourself.</div>
+          <div class="auth-point"><i class="bi bi-window"></i> Choose a professional Light or Black workspace designed for clarity and comfortable reading.</div>
+        </div>
+      </div>
+      <small class="opacity-50">Built for organizations that care about customer experience.</small>
+    </section>
+
+    <section class="auth-form-side position-relative">
+      <div class="surface-card auth-card">
+        <div class="section-icon mb-3"><i class="bi bi-person-plus"></i></div>
+        <h2>Create owner account</h2>
+        <p>Your account will be connected to the organization you configure during onboarding.</p>
+        <form id="signupForm" onsubmit="signup(event)">
+          <div class="row g-3">
+            <div class="col-sm-6"><label class="form-label">First name</label><input class="form-control" name="first_name" placeholder="First name" autocomplete="given-name" required></div>
+            <div class="col-sm-6"><label class="form-label">Last name</label><input class="form-control" name="last_name" placeholder="Last name" autocomplete="family-name" required></div>
+            <div class="col-12"><label class="form-label">Email address</label><input class="form-control" type="email" name="email" placeholder="owner@company.com" autocomplete="email" required></div>
+            <div class="col-12"><label class="form-label">Password</label><input class="form-control" type="password" name="password" minlength="8" placeholder="At least 8 characters" autocomplete="new-password" required></div>
+            <div class="col-12"><label class="form-label">Confirm password</label><input class="form-control" type="password" name="confirm_password" minlength="8" placeholder="Repeat your password" autocomplete="new-password" required></div>
+          </div>
+          <button id="signupBtn" class="btn btn-primary w-100 mt-4" type="submit"><i class="bi bi-person-check me-2"></i>Create Account</button>
+        </form>
+        <div class="auth-link">Already have an account? <a href="login.html">Login</a></div>
+      </div>
+    </section>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
